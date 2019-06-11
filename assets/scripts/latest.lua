@@ -6,7 +6,7 @@ local gui_name = ""
 function generate_name()
   local a = {}
   local aa = ""
-  for i = 1, math.random(1,15) do
+  for i = 1, 30 do
     local b = string.char(math.random(98,122))
     if math.random(1,2)then b=b:upper()end
     table.insert(a,b)
