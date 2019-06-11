@@ -1,8 +1,9 @@
-site_name: gseHost
+site_name: Jarvis Documentation
 nav:
     - Home: index.md
 theme:
     name: material
+    favicon: 'img/favicon.ico'
 markdown_extensions:
     - codehilite:
         linenums: true
