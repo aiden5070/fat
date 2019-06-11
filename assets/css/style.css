@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 1);
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(192, 192, 192);
+}
+
+body {
+  margin: 0 0;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #242424;
+}
+
+.head {
+  background: whitesmoke;
+  display: absolute;
+  width: 100%;
+  height: 600px;
+}
+
+.logo {
+  text-align: center;
+  left: 50%;
+  top: 50%;
+}
+
+.name {
+  display: block;
+  margin-top: -50px;
+  font-size: 49pt;
+  letter-spacing: 9px;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.content {
+  margin: 95px;
+}
+
+.buttons {
+  display: inline-block;
+  padding: 5px;
+  opacity: 0;
+}
+
+.button {
+  border: 1px solid #242424;
+  border-radius: 3px;
+  align-items: center;
+  display: inline-flex;
+  height: 2.5em;
+  vertical-align: top;
+  user-select: none;
+  justify-content: center;
+  padding-left: .75em;
+  padding-right: .75em;
+  text-align: center;
+  color: #242424;
+  text-decoration: none;
+}
+
+.para {
+  animation: 1.5s ease-out 0s 1 fadeIn, 1s ease-out 0s 1 slideUp;
+  -webkit-animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20%);
+  }
+
+  100% {
+    transform: translateY(-15%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes buttonFade {
+  0% {
+    display: block;
+    opacity: 0;
+    transform: translateY(15%);
+  }
+
+  30% {
+    display: block;
+    opacity: .5;
+    transform: translateY(10%);
+  }
+
+  60% {
+    display: block;
+    opacity: .8;
+    transform: translateY(5%);
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
